@@ -3,6 +3,6 @@ outputs/
 models/
 *.ipynb_checkpoints/
 __pycache__/
-*.pyc
+*.py[cod]
 .DS_Store
 Thumbs.db
