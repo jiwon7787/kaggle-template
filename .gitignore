@@ -1,6 +1,6 @@
-competitions/*/data/
-competitions/*/outputs/
-competitions/*/models/
+data/
+outputs/
+models/
 *.ipynb_checkpoints/
 __pycache__/
 *.pyc
