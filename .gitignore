@@ -1,12 +1,12 @@
 # data は中身をすべて無視、ただし .gitkeep は許可
-data/**
 !data/.gitkeep
 !data/**/.gitkeep
+data/**
 
 # outputs も同様
-outputs/**
 !outputs/.gitkeep
 !outputs/**/.gitkeep
+outputs/**
 
 # ほかの定番
 models/
