@@ -1,16 +1,16 @@
 # --- data: 中身は無視するが、ディレクトリと .gitkeep は追跡 ---
+data/**
 !data/
 !data/**/
 !data/.gitkeep
 !data/**/.gitkeep
-data/**
 
 # --- outputs: 同様 ---
+outputs/**
 !outputs/
 !outputs/**/
 !outputs/.gitkeep
 !outputs/**/.gitkeep
-outputs/**
 
 # そのほか定番
 models/
