@@ -1,5 +1,15 @@
-data/
-outputs/
+# data と outputs の中身は無視、ただし .gitkeep は許可
+data/*
+!data/.gitkeep
+data/**/
+!data/**/.gitkeep
+
+outputs/*
+!outputs/.gitkeep
+outputs/**/
+!outputs/**/.gitkeep
+
+# そのほかの定番
 models/
 *.ipynb_checkpoints/
 __pycache__/
