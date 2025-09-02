@@ -1,15 +1,15 @@
 from pathlib import Path
 
-# このリポがプロジェクトのルート
 PROJECT = Path(__file__).resolve().parent
 
-# データと出力（リポ内で完結）
-DATA = PROJECT / "data"
-RAW = DATA / "raw"               # 生データ（train.csv 等）
-PROCESSED = DATA / "processed"   # 前処理成果物
-OUTPUTS = PROJECT / "outputs"    # モデル/予測/ログ
-OUTPUTS.mkdir(parents=True, exist_ok=True)
+DATA_DIR = PROJECT / "data"
+RAW_DIR = DATA_DIR / "raw"
+PROCESSED_DIR = DATA_DIR / "processed"
+EXTERNAL_DIR = DATA_DIR / "external"
+OUTPUTS_DIR = PROJECT / "outputs"
 
-# よく使うパスエイリアス（存在チェックは呼び出し側で）
-TRAIN_CSV = RAW / "train.csv"
-TEST_CSV  = RAW / "test.csv"
+for d in [RAW_DIR, PROCESSED_DIR, EXTERNAL_DIR, OUTPUTS_DIR]:
+    d.mkdir(parents=True, exist_ok=True)
+
+TRAIN_CSV = RAW_DIR / "train.csv"
+TEST_CSV  = RAW_DIR / "test.csv"
